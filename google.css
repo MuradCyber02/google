@@ -1,0 +1,181 @@
+body{
+    
+    
+
+    background-color:rgb(136, 200, 200);
+}
+
+.ser{
+    height: 40px;
+    width: 500px;
+    border-radius: 18px;
+    border: none;
+    margin-left: 1%;
+    margin-right: 3%;
+    color: #a03b3b;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+
+
+
+.ser::before{
+    content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg,
+    #ff0000, #ff7300, #fffb00,
+    #48ff00, #00ffd5, #002bff,
+    #7a00ff, #ff00ab, #ff0000);
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  animation: borderAnimation 10s linear infinite;
+
+
+}
+.ser::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #911d1d;
+  z-index: -1;
+
+
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+.div{
+margin-top: 13%;
+margin-left: 35%;
+
+}
+
+.goo{
+margin-left: 10%;
+font-size: 600%;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.naq{
+    margin-top: -25%;
+    margin-bottom: 3%;
+    
+
+}
+
+
+.navbar-brand{
+  border: none;
+}
+
+.form-selec{
+  background-color: #31aa90;
+
+}
+
+#singin{
+  background-color: white;
+
+
+}
+#singup{
+  background-color: white;
+
+
+}
+
+
+
+
+
+#naqgoo{
+
+    padding-left: 1.2%;
+    align-items: center;
+
+
+
+}
+.imgs{
+    border: none;
+
+    object-fit:none ;
+    contain: none;
+    border-radius: 180px;
+    
+
+}
+
+.imgs:hover{
+
+    background-color: #3367d6;
+}
+
+.form-control{
+
+    width: 1160px;
+    border-radius: 40px;
+}
+
+.btn-outline-success{
+  
+
+
+    border-radius: 100px;
+}
+.btn-outline-success:hover .star{
+
+  display: block;
+  filter: drop-shadow(0 0 10px #fffdef);
+}
+
+#ox{
+    border: none;
+    border-radius: 40px;
+    margin-top: 11x;
+
+
+}
+
+#ox1{
+    border: none;
+    border-radius: 40px;
+    margin-top: 11px;
+
+
+}
+
+#ox:hover{
+
+    background-color: #6e6ec2;
+}
+
+#ox1:hover{
+
+    background-color: #6e6ec2;
+}
