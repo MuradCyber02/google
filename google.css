@@ -2,7 +2,7 @@ body{
     
     
 
-    background-color:rgb(136, 200, 200);
+    background-color:rgb(171, 222, 222);
 }
 
 .ser{
@@ -16,6 +16,7 @@ body{
     cursor: pointer;
     z-index: 1;
     overflow: hidden;
+    
 }
 
 
@@ -84,18 +85,30 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .naq{
     margin-top: -25%;
     margin-bottom: 3%;
+
     
 
 }
 
+.naq:hover{
+  background-color: #bd4e29;
 
-.navbar-brand{
-  border: none;
+
 }
 
-.form-selec{
-  background-color: #31aa90;
 
+.navbar-brand:hover{
+clear: both;
+
+
+  
+
+  
+}
+
+.form-select{
+  height: 40px;
+  
 }
 
 #singin{
@@ -126,14 +139,17 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     object-fit:none ;
     contain: none;
+    padding-right: 8px;
     border-radius: 180px;
+    
     
 
 }
 
 .imgs:hover{
+  
 
-    background-color: #6c8dd5;
+    background-color: #b7bdca;
 }
 
 .form-control{
@@ -172,10 +188,11 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 #ox:hover{
 
-    background-color: #6e6e8da8;
+    background-color:#b7bdca;
 }
 
 #ox1:hover{
 
-    background-color: #6e6e8da8;
+    background-color: #b7bdca;
 }
+
