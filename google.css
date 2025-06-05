@@ -1,22 +1,22 @@
-body{
-    
-    
+body {
+  background-color: rgb(171, 222, 222);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    background-color:rgb(171, 222, 222);
+.goo {
+  font-size: 4rem;
+  margin-top:4em;
 }
 
 .input-wrapper {
   position: relative;
-  width: 1000px;
-  margin-left: 1%;
-  
- 
+  width: 500px;
 }
 
 .search-icon {
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 15px;
   transform: translateY(-50%);
   color: #555;
   font-size: 20px;
@@ -24,170 +24,66 @@ body{
 }
 
 .ser {
-  padding-left: 40px !important;
-  position: relative;
-  z-index: 1;
-  border-radius: 40px;
-  width: 500px;
+  padding-left: 40px;
   height: 50px;
-}
-.ser:hover{
+  width: 100%;
   border: none;
+  border-radius: 25px;
+  outline: none;
 }
+
 .animated-border {
-  position: relative;
-  display: inline-block;
-  padding: 2px; /* Nazik sərhəd üçün */
-  border-radius: 20px;
   background: linear-gradient(270deg,
     #ff0000, #ff7300, #fffb00,
     #48ff00, #00ffd5, #002bff,
     #7a00ff, #ff00ab, #ff0000);
   background-size: 400% 400%;
   animation: borderGlow 6s linear infinite;
+  padding: 2px;
+  border-radius: 25px;
 }
 
 .animated-border .ser {
-  position: relative;
-  z-index: 1;
-  border: 15em;
-  outline: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  width: 500px;
   background-color: white;
 }
 
-
-
-
-
-
-
-.div{
-margin-top: 13%;
-margin-left: 35%;
-
+@keyframes borderGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
-.goo{
-margin-left: 10%;
-font-size: 600%;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-}
-
-.naq{
-    margin-top: -25%;
-    margin-bottom: 3%;
-
-    
-
-}
-
-.naq:hover{
-  background-color: #bd4e29;
-
-
-}
-
-
-.navbar-brand:hover{
-clear: both;
-
-
-  
-
+.form-select {
+  width: 150px;
   
 }
 
-.form-select{
-  height: 40px;
+#ox, #ox1 {
+  border: none;
+  background: transparent;
+  border-radius: 40px;
+  margin: 0 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#ox:hover, #ox1:hover {
+  background-color: #b7bdca;
+}
+
+.form-control {
+  border-radius: 40px;
+  width: 1100px;
+  
   
 }
 
-#singin{
-  background-color: white;
-
-
-}
-#singup{
-  background-color: white;
-
-
+.btn-outline-success {
+  border-radius: 40px;
 }
 
-
-
-
-
-#naqgoo{
-
-    padding-left: 1.2%;
-    align-items: center;
-
-
+.serf{
+margin-top: -450px;
 
 }
-.imgs{
-    border: none;
-
-    object-fit:none ;
-    contain: none;
-    padding-right: 8px;
-    border-radius: 180px;
-    
-    
-
-}
-
-.imgs:hover{
-  
-
-    background-color: #b7bdca;
-}
-
-.form-control{
-
-    width: 1160px;
-    border-radius: 40px;
-}
-
-.btn-outline-success{
-  
-
-
-    border-radius: 100px;
-}
-.btn-outline-success:hover .star{
-
-  display: block;
-  filter: drop-shadow(0 0 10px #fffdef);
-}
-
-#ox{
-    border: none;
-    border-radius: 40px;
-    margin-top: 11x;
-
-
-}
-
-#ox1{
-    border: none;
-    border-radius: 40px;
-    margin-top: 11px;
-
-
-}
-
-#ox:hover{
-
-    background-color:#b7bdca;
-}
-
-#ox1:hover{
-
-    background-color: #b7bdca;
-}
-
