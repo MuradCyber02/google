@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(135deg, #699cdf, #e0f2fe);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.signup-box h1 {
+  margin-bottom: 30px;
+  color: #1a73e8;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 16px;
+  color: #666;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  left: 5px;
+  font-size: 12px;
+  color: #1a73e8;
+}
+
+.animated-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  transition: width 0.4s ease-in-out;
+}
+
+.input-group input:focus ~ .animated-border {
+  width: 100%;
+}
