@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(135deg, #699cdf, #e0f2fe);
+  background: linear-gradient(135deg, #4b8ee4, #e0f2fe);
   font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
@@ -70,4 +70,21 @@ body {
 
 .input-group input:focus ~ .animated-border {
   width: 100%;
+}
+
+#BtSIG{
+  margin-top: 1em;
+  margin-left: 20em;
+  width: 80px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+
+
+
+
+}
+#BtSIG:hover{
+  background-color: rgba(138, 236, 236, 0.79);
+  
 }

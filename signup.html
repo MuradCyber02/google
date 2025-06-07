@@ -21,7 +21,40 @@
       <input type="password" required />
       <label>Password</label>
       <span class="animated-border"></span>
+      
     </div>
+    <button id="BtSIG">Sign In</button>
+  
   </div>
+  <script>
+  document.getElementById("BtSIG").addEventListener("click", function () {
+    const inputs = document.querySelectorAll(".input-group input");
+    const email = inputs[0].value.trim();
+    const password = inputs[1].value.trim();
+
+    // Əvvəlki səhv və ya uğurlu mesaj varsa sil
+    const existingMsg = document.querySelector(".form-msg");
+    if (existingMsg) existingMsg.remove();
+
+    const message = document.createElement("p");
+    message.className = "form-msg";
+    message.style.marginTop = "10px";
+    message.style.fontWeight = "600";
+
+    // Sadə email yoxlaması (yalnız @gmail.com üçün)
+    if (!email.endsWith("@gmail.com")) {
+      message.textContent = "Enter your username correctly";
+      message.style.color = "red";
+    } else {
+      // Uğurlu qeydiyyat mesajı
+      const userId = Math.floor(Math.random() * 1000000); // Random ID (simulyasiya)
+      message.textContent = `Registration was successfully received`;
+      message.style.color = "green";
+    }
+
+    document.querySelector(".signup-box").appendChild(message);
+  });
+</script>
+
 </body>
 </html>
