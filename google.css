@@ -6,11 +6,18 @@ body {
 .goo {
   font-size: 4rem;
   margin-top:4em;
+  margin-top: 20%;
+}
+#goos{
+  font-size: 90px;
+
+
 }
 
 .input-wrapper {
   position: relative;
   width: 500px;
+  margin-top: 30%;
 }
 
 .search-icon {
@@ -21,6 +28,7 @@ body {
   color: #555;
   font-size: 20px;
   z-index: 2;
+  
 }
 
 .ser {
@@ -84,6 +92,6 @@ body {
 }
 
 .serf{
-margin-top: -450px;
+margin-top: -455px;
 
 }
