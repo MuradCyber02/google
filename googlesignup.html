@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="googlesignup.css">
+</head>
+<body>
+
+  <div class="container text-center mt-5">
+    <h1 class="goo" id="goo"><span style="color:#4285F4;">G</span><span style="color:#EA4335;">o</span><span style="color:#FBBC05;">o</span><span style="color:#4285F4;">g</span><span style="color:#34A853;">l</span><span style="color:#EA4335;">e</span>
+    </h1>
+
+    <div class="input-wrapper mx-auto mt-4">
+      <span class="material-icons search-icon">search</span>
+      <div class="animated-border">
+        <input class="ser" type="search" placeholder=" Search Google or type a URL">
+      </div>
+    </div>
+  </div>
+
+
+<div class="serf">
+  <nav class="navbar navbar-expand-lg bg-light mt-5">
+    
+    <div class="profile-wrapper position-relative ms-3">
+      <img id="profile-picture" class="rounded-circle profile-img" src="download (1).png" alt="Profil" />
+      <label for="imageUpload" class="upload-btn position-absolute">
+        <span class="material-icons">+</span>
+      </label>
+      <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    </div>
+   
+
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+        <li class="nav-item">
+          <a class="nav-link" href="google.html">
+            <img src="download__1_-removebg-preview.png" alt="home icon" width="25" height="25">
+          </a>
+        </li>
+        <li class="nav-item d-flex">
+          <button onclick="history.back()" id="ox">←</button>
+          <button onclick="history.forward()" id="ox1">→</button>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</div>
+
+<script>
+ 
+  const searchInput = document.querySelector('.ser');
+
+  // Enter basılarsa Google-da axtar
+  searchInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // 
+      const query = searchInput.value.trim(); 
+
+      if (query !== "") {
+        const googleSearchUrl = "https://www.google.com/search?q=" + encodeURIComponent(query);
+        window.open(googleSearchUrl, '_blank'); 
+      }
+    }
+  });
+</script>
+
+<script>
+  const imageUpload = document.getElementById("imageUpload");
+  const profilePicture = document.getElementById("profile-picture");
+
+  // Daha əvvəl yüklənmiş şəkli göstər
+  window.addEventListener("load", () => {
+    const savedImage = localStorage.getItem("profileImage");
+    if (savedImage) {
+      profilePicture.src = savedImage;
+    }
+  });
+
+  // Şəkil dəyişdirildikdə göstər və yadda saxla
+  imageUpload.addEventListener("change", function () {
+    const file = this.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        profilePicture.src = e.target.result;
+        localStorage.setItem("profileImage", e.target.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
